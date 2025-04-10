@@ -1,0 +1,23 @@
+{
+  "Invest":"Invest",
+  "Dashboard":"Dashboard",
+  "Investments":"Investments",
+  "AddNewInvestment":"Add New Investment",
+  "Arabic":"Arabic",
+  "English":"English",
+  "Errorloadinginvestments":"Error loading investments",
+  "Noinvestmentsfound":"No investments found",
+  "TotalAmount":"Total Amount",
+  "AverageROI"  : "Average ROI",
+  "Name":"Name",
+  "Amount":"Amount",
+  "ROI":"ROI",
+  "Add":"Add",
+  "Document(optional)":"Document (optional)",
+  "Max 5MB, PDF or images only": "Max 5MB, PDF or images only",
+  "Submit":"Submit",
+  "Name is required": "Name is required",
+  "Amount must be a number": "Amount must be a number",
+  "Amount must be greater than 0": "Amount must be greater than 0",
+  "Amount is required": "Amount is required"
+}

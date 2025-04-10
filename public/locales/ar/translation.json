@@ -1,0 +1,23 @@
+{
+  "Invest": "استثمر",
+  "Dashboard": "لوحة التحكم",
+  "Investments": "الاستثمارات",
+  "AddNewInvestment": "إضافة استثمار جديد",
+  "Arabic": "العربية",
+  "English": "English",
+  "Errorloadinginvestments": "خطأ في تحميل الاستثمارات",
+  "Noinvestmentsfound": "لم يتم العثور على استثمارات",
+  "TotalAmount": "إجمالي المبلغ",
+  "AverageROI": "متوسط العائد على الاستثمار",
+  "Name": "الاسم",
+  "Amount": "المبلغ",
+  "ROI": "العائد على الاستثمار",
+  "Add": "إضافة",
+  "Document(optional)": "وثيقة (اختياري)",
+  "Max 5MB, PDF or images only": "الحد الأقصى 5 ميجابايت، ملفات PDF أو صور فقط",
+  "Submit": "إرسال",
+  "Name is required": "الاسم مطلوب",
+  "Amount must be a number": "المبلغ يجب أن يكون رقمًا",
+  "Amount must be greater than 0": "المبلغ يجب أن يكون أكبر من 0",
+  "Amount is required": "المبلغ مطلوب"
+}

@@ -1,0 +1,87 @@
+[
+    {
+      "id": "1",
+      "name": "Tech Fund",
+      "amount": 10000,
+      "roi": 8.5
+    },
+    {
+      "id": "2",
+      "name": "Real Estate",
+      "amount": 15000,
+      "roi": 6.2
+    },
+    {
+        "id": "3",
+        "name": "Green Energy",
+        "amount": 20000,
+        "roi": 7.0
+    },
+    {
+        "id": "4",
+        "name": "Healthcare",
+        "amount": 12000,
+        "roi": 5.5
+    },
+    {
+        "id": "6",
+        "name": "Emerging Markets",
+        "amount": 25000,
+        "roi": 9.0
+    },
+    {
+        "id": "7",
+        "name": "Bonds",
+        "amount": 5000,
+        "roi": 4.0
+    },
+    {
+        "id": "8",
+        "name": "Commodities",
+        "amount": 7000,
+        "roi": 5.5
+    },
+    {
+        "id": "9",
+        "name": "Venture Capital",
+        "amount": 30000,
+        "roi": 10.0
+    },
+    {
+        "id": "10",
+        "name": "Index Funds",
+        "amount": 18000,
+        "roi": 7.5
+    },
+    {
+        "id": "11",
+        "name": "Private Equity",
+        "amount": 22000,
+        "roi": 9.5
+    },
+    {
+        "id": "12",
+        "name": "Forex Trading",
+        "amount": 6000,
+        "roi": 11.0
+    },
+    {
+        "id": "13",
+        "name": "Art Investments",
+        "amount": 4000,
+        "roi": 3.5
+    },
+    {
+        "id": "14",
+        "name": "Peer-to-Peer Lending",
+        "amount": 9000,
+        "roi": 6.8
+    },
+    {
+        "id": "15",
+        "name": "Agriculture",
+        "amount": 11000,
+        "roi": 4.5
+    }
+  ]
+    
