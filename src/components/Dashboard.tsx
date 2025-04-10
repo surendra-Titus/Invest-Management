@@ -46,9 +46,15 @@ const Dashboard = () => {
   if (isLoading) return <Spinner size="xl" />;
   if (isError) return <div>{t("Errorloadinginvestments")}</div>;
   if (!investments) return <div>{t("Noinvestmentsfound")}</div>;
-  console.log(investments);
+
   return (
-    <Box p={4} dir={i18n.dir()} ref={componentRef}>
+    <Box
+      p={4}
+      dir={i18n.dir()}
+      ref={componentRef}
+      height="80%"
+      overflowY="auto"
+    >
       <Heading mb={4}>{t("Investments")}</Heading>
       <Flex gap={4} mb={6} flexWrap="wrap">
         <SummaryCard label={t("TotalAmount")} value={totalAmount} />
