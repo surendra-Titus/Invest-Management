@@ -41,7 +41,8 @@ const Investments = () => {
             shadow="md"
             borderWidth="1px"
             borderRadius="lg"
-            height={"90%"}
+            height="calc(100vh - 100px)"
+            overflow="hidden"
           >
             <Card.Header>
               <Box
@@ -63,34 +64,44 @@ const Investments = () => {
               </Box>
             </Card.Header>
             <Card.Body>
-              <Table.Root
-                size="sm"
+              <Table.ScrollArea
                 borderWidth="1px"
-                borderRadius="lg"
-                overflowY={"auto"}
-                colorScheme="teal"
+                rounded="md"
+                height="calc(100vh - 200px)"
               >
-                <Table.Header>
-                  <Table.Row>
-                    <Table.ColumnHeader>{t("Name")}</Table.ColumnHeader>
-                    <Table.ColumnHeader textAlign="end">
-                      {t("Amount")}
-                    </Table.ColumnHeader>
-                    <Table.ColumnHeader textAlign="end">
-                      {t("ROI")}
-                    </Table.ColumnHeader>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  {investments.map((inv: Investment) => (
-                    <Table.Row key={inv.id}>
-                      <Table.Cell>{inv.name}</Table.Cell>
-                      <Table.Cell textAlign="end">{inv.amount}</Table.Cell>
-                      <Table.Cell textAlign="end">{inv.roi}%</Table.Cell>
+                <Table.Root
+                  size="sm"
+                  borderWidth="1px"
+                  borderRadius="lg"
+                  overflowY="auto"
+                  colorScheme="teal"
+                  striped
+                  showColumnBorder
+                  stickyHeader
+                  interactive
+                >
+                  <Table.Header>
+                    <Table.Row>
+                      <Table.ColumnHeader>{t("Name")}</Table.ColumnHeader>
+                      <Table.ColumnHeader textAlign="end">
+                        {t("Amount")}
+                      </Table.ColumnHeader>
+                      <Table.ColumnHeader textAlign="end">
+                        {t("ROI")}
+                      </Table.ColumnHeader>
                     </Table.Row>
-                  ))}
-                </Table.Body>
-              </Table.Root>
+                  </Table.Header>
+                  <Table.Body>
+                    {investments.map((inv: Investment) => (
+                      <Table.Row key={inv.id}>
+                        <Table.Cell>{inv.name}</Table.Cell>
+                        <Table.Cell textAlign="end">{inv.amount}</Table.Cell>
+                        <Table.Cell textAlign="end">{inv.roi}%</Table.Cell>
+                      </Table.Row>
+                    ))}
+                  </Table.Body>
+                </Table.Root>
+              </Table.ScrollArea>
             </Card.Body>
             <Card.Footer />
           </Card.Root>
