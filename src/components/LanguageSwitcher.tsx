@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
       collection={languages}
       size="sm"
       width="100px"
-      defaultValue={[i18n.language]}
+      defaultValue={[i18n.language ?? "en"]}
     >
       <Select.HiddenSelect />
       <Select.Control>
