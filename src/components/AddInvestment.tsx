@@ -1,4 +1,4 @@
-import { Box, Button, Input, Field, Text } from "@chakra-ui/react";
+import { Box, Button, Input, Field, Text, Heading } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -44,6 +44,7 @@ const AddInvestment: React.FC = () => {
   return (
     <>
       <Box maxW="md" mx="auto" mt={4} p={4} borderWidth={1} borderRadius="lg">
+        <Heading mb={4}>{t("AddNewInvestment")}</Heading>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Field.Root invalid={!!errors.name}>
             <Field.Label>
