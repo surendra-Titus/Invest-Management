@@ -34,27 +34,27 @@ A simplified admin dashboard built with modern frontend technologies to manage i
 
 4. **Project Structure**
    ```
-├── public/                  # Static public assets
-│   ├── data/                # Static data files
-│   └── locales/             # i18n translation files
-│
-├── src/                     # Source code
-│   ├── app/                 # Application-level logic and state management (e.g., Redux slices)
-│   ├── assets/              # Static assets like images, fonts, etc.
-│   ├── components/          # Reusable UI components
-│   ├── hooks/               # Custom React hooks
-│   ├── i18n/                # i18n initialization and config
-│   ├── services/            # API calls and external service handlers
-│   ├── utils/               # Utility functions and helpers
-│   ├── App.tsx             # Main App component
-│   ├── index.css           # Global CSS
-│   ├── main.tsx            # Entry point of the application
-│
-├── .gitignore               # Git ignore rules
-├── index.html               # HTML entry point for Vite
-├── package.json             # Project metadata and dependencies
-├── package-lock.json        # Exact versions of installed dependencies
-├── README.md                # Project documentation
+      ├── public/                  # Static public assets
+      │   ├── data/                # Static data files
+      │   └── locales/             # i18n translation files
+      │
+      ├── src/                     # Source code
+      │   ├── app/                 # Application-level logic and state management (e.g., Redux slices)
+      │   ├── assets/              # Static assets like images, fonts, etc.
+      │   ├── components/          # Reusable UI components
+      │   ├── hooks/               # Custom React hooks
+      │   ├── i18n/                # i18n initialization and config
+      │   ├── services/            # API calls and external service handlers
+      │   ├── utils/               # Utility functions and helpers
+      │   ├── App.tsx             # Main App component
+      │   ├── index.css           # Global CSS
+      │   ├── main.tsx            # Entry point of the application
+      │
+      ├── .gitignore               # Git ignore rules
+      ├── index.html               # HTML entry point for Vite
+      ├── package.json             # Project metadata and dependencies
+      ├── package-lock.json        # Exact versions of installed dependencies
+      ├── README.md                # Project documentation
 
    ```
 
