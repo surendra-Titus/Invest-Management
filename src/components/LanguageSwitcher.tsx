@@ -1,8 +1,10 @@
 import { Portal, Select, createListCollection } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
-const LanguageSwitcher: React.FC = () => {
+interface LanguageSwitcherProps {
+  closeMenu?: () => void;
+}
+const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ closeMenu }) => {
   const { t, i18n } = useTranslation();
 
   const languages = createListCollection({
@@ -14,6 +16,7 @@ const LanguageSwitcher: React.FC = () => {
 
   const handleChange = (value: string) => {
     i18n.changeLanguage(value);
+    closeMenu && closeMenu();
   };
 
   useEffect(() => {
