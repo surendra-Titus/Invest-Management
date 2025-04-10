@@ -1,5 +1,6 @@
 import { Flex, IconButton, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 //import { ColorModeToggle } from "./ColorModeToggle";
 
 const Header = () => {
@@ -27,6 +28,7 @@ const Header = () => {
           {t("Invest")}
         </Text>
         {/* <ColorModeToggle></ColorModeToggle> */}
+        <LanguageSwitcher />
       </Flex>
     </>
   );

@@ -81,7 +81,6 @@ const Dashboard = () => {
             <Tooltip />
             <Legend />
             <Bar dataKey="amount" fill="#8884d8" />
-            <Bar dataKey="roi" fill="#82ca9d" />
           </BarChart>
         </ResponsiveContainer>
       </Box>

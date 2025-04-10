@@ -1,12 +1,9 @@
 import { Portal, Select, createListCollection } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-interface LanguageSwitcherProps {
-  closeMenu?: () => void;
-}
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ closeMenu }) => {
-  const { t, i18n } = useTranslation();
 
+const LanguageSwitcher = () => {
+  const { t, i18n } = useTranslation();
   const languages = createListCollection({
     items: [
       { label: "English", value: "en" },
@@ -16,7 +13,6 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ closeMenu }) => {
 
   const handleChange = (value: string) => {
     i18n.changeLanguage(value);
-    closeMenu && closeMenu();
   };
 
   useEffect(() => {
@@ -27,7 +23,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ closeMenu }) => {
     <Select.Root
       collection={languages}
       size="sm"
-      width="220px"
+      width="100px"
       defaultValue={[i18n.language]}
     >
       <Select.HiddenSelect />

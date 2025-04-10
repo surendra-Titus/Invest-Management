@@ -7,8 +7,8 @@ import {
   Portal,
 } from "@chakra-ui/react";
 import SidemenuContent from "./SidemenuContent";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { GiHamburgerMenu } from "react-icons/gi";
+
 const Sidemenu = () => {
   return (
     <>
@@ -48,7 +48,6 @@ const Sidemenu = () => {
                       <SidemenuContent
                         onItemClick={() => store.setOpen(false)}
                       />
-                      <LanguageSwitcher />
                     </Flex>
                   </Drawer.Body>
                 )}
@@ -74,7 +73,6 @@ const Sidemenu = () => {
           pb={10}
         >
           <SidemenuContent />
-          <LanguageSwitcher />
         </Flex>
       </Box>
     </>
