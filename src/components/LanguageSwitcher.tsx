@@ -1,18 +1,30 @@
 import { Portal, Select, createListCollection } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation();
   const languages = createListCollection({
     items: [
-      { label: "English", value: "en-US" },
+      { label: "English", value: "en" },
       { label: "Arabic", value: "ar" },
+      { label: "Spanish", value: "es" },
+      { label: "French", value: "fr" },
+      { label: "German", value: "de" },
     ],
   });
-
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    languages.items.find((item) => item.value === i18n.language) ||
+      languages.items[0]
+  );
   const handleChange = (value: string) => {
-    i18n.changeLanguage(value);
+    const selected = languages.items.find((item) => item.value === value);
+    if (selected) {
+      setSelectedLanguage(selected);
+      i18n
+        .changeLanguage(value)
+        .catch((error) => console.error("Error changing language:", error));
+    }
   };
 
   useEffect(() => {
@@ -24,7 +36,7 @@ const LanguageSwitcher = () => {
       collection={languages}
       size="sm"
       width="100px"
-      defaultValue={[i18n.language || "en-US"]}
+      defaultValue={[selectedLanguage.value]}
     >
       <Select.HiddenSelect />
       <Select.Control>
