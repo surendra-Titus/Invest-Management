@@ -6,7 +6,7 @@ const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation();
   const languages = createListCollection({
     items: [
-      { label: "English", value: "en" },
+      { label: "English", value: "en-US" },
       { label: "Arabic", value: "ar" },
     ],
   });
@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
       collection={languages}
       size="sm"
       width="100px"
-      defaultValue={[i18n.language ?? "en"]}
+      defaultValue={[i18n.language || "en-US"]}
     >
       <Select.HiddenSelect />
       <Select.Control>
